@@ -1,0 +1,77 @@
+<!--------w-----------
+
+    Project 4
+    Name: Daniel Martens
+    Date: April 25, 2023
+    Description: The home page for the Daniel Martens Portfolio website.
+
+--------------------->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Daniel Martens Portfolio</title>
+		<link rel="stylesheet" href="project4styles.css">
+		<script src="js/utilityFunctions.js"></script>
+		<script src="js/formValidate.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Portfolio of Daniel Martens</h1>
+			<nav>
+				<ul class="navBar">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="skills.html">Skills</a></li>
+					<li><strong>Contact</strong></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<form id="contact" method="post" action="index.html">
+				<ul>
+					<li>
+						<label for="name">Name:</label>
+						<input id="name" name="name" type="text" >
+					</li>
+					<li class="nameError error" id="name_error">
+						<p>* Required field</p>
+					</li>
+					<li>
+						<label for="phone">Phone Number:</label>
+						<input id="phone" name="phone" type="text" >
+					</li>
+					<li class="phoneError error" id="phone_error">
+						<p>* Required field</p>
+					</li>
+					<li class="phoneError error" id="phoneformat_error">
+						<p>* Invalid phone number</p>
+					</li>
+					<li>
+						<label for="email">Email:</label>
+						<input id="email" name="email" type="text" >
+					</li>
+					<li class="emailError error" id="email_error">
+						<p>* Required field</p>
+					</li>
+					<li class="emailError error" id="emailformat_error">
+						<p>* Invalid email address</p>
+					</li>
+					<li>
+						<label for="comment">Comment:</label>
+						<textarea id="comment" name="comment" rows="5" cols="66"></textarea>
+					</li>
+				</ul>
+				<div id="formButtons">
+					<button type="submit" id="submit">Send Message</button>
+					<button type="reset" id="clear">Clear Form</button>
+				</div>
+			</form>
+		</main>
+		<footer>
+			<ul class="navBar">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="skills.html">Skills</a></li>
+				<li><strong>Contact</strong></li>
+			</ul>
+		</footer>
+	</body>
+</html>
